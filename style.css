@@ -71,6 +71,16 @@ h1 {
 p {
     margin: 5px 0;
 }
+#countdown {
+    font-size: 24px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; */
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 600px) {
     .one{
         flex-direction: column;
