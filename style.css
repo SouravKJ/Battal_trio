@@ -71,3 +71,9 @@ h1 {
 p {
     margin: 5px 0;
 }
+@media screen and (min-width: 480px) {
+    .one{
+        flex-direction: column;
+    }
+    
+}
