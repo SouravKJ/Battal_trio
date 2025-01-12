@@ -44,7 +44,7 @@ h1 {
 .one{
     display: flex;
     justify-content: center;
-    column-gap: 200px;
+    column-gap: 100px;
 }
 #results {
     margin-top: 20px;
