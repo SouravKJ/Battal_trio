@@ -84,8 +84,9 @@ p {
 @media screen and (max-width: 600px) {
     .one{
         flex-direction: column;
+        justify-content: center;
     }
-    #countdown{
-        margin-left: 2%;
-    }
+    
+
+    
 }
