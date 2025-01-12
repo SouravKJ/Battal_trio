@@ -32,7 +32,7 @@ function showComputerChoice(callback) {
             countdownElement.style.display = "none";  // Hide countdown
 
             // Display computer's choice image
-            computerChoiceImage.style.display = "block";
+            computerChoiceImage.style.display = "inline-block";
             computerChoiceImage.src = choiceToImage[computerChoice];
 
             // Call the callback with the computer's choice
