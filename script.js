@@ -4,12 +4,12 @@ const computerChoiceImage = document.getElementById("computer-choice-image");
 let countdownInterval; // To store the interval ID for countdown
 
 function showComputerChoice(callback) {
-    let countdown = 3;
+    let countdown = 0;
 
     // Clear previous choice image
     computerChoiceImage.style.display = "none";
     computerChoiceImage.src = "";
-    countdownElement.textContent = `Computer is choosing in... ${countdown}`;
+    countdownElement.textContent = ` ${choices[countdown]}`;
     countdownElement.style.display = "block"; // Ensure countdown is visible
 
     // Clear previous interval if it exists
@@ -17,9 +17,9 @@ function showComputerChoice(callback) {
 
     // Countdown logic
     countdownInterval = setInterval(() => {
-        countdown--;
-        if (countdown > 0) {
-            countdownElement.textContent = `Computer is choosing in... ${countdown}`;
+        countdown++;
+        if (countdown < 3) {
+            countdownElement.textContent = `${choices[countdown]}`;
         } else {
             clearInterval(countdownInterval);
             const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -80,8 +80,7 @@ function resetGame() {
     document.getElementById("result").textContent = "Result: ";
 
     // Reset the countdown display
-    countdownElement.style.display = "block";
-    countdownElement.textContent = "Computer is choosing in... 3";
+    ;
 }
 
 // Helper function to capitalize choices
