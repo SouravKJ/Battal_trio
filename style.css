@@ -85,5 +85,7 @@ p {
     .one{
         flex-direction: column;
     }
-    
+    #countdown{
+        margin-left: 2%;
+    }
 }
