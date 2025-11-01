@@ -2,6 +2,12 @@ const choices = ["stone", "paper", "scissor"];
 const countdownElement = document.getElementById("countdown");
 const computerChoiceImage = document.getElementById("computer-choice-image");
 let countdownInterval; // To store the interval ID for countdown
+let nameElements = document.getElementsByClassName("name");
+
+for (let el of nameElements) {
+  el.textContent = UserName;  // ✅ show username text
+  el.style.display = "block"; // ✅ make sure visible
+}
 
 function showComputerChoice(callback) {
     let countdown = 0;
@@ -87,3 +93,4 @@ function resetGame() {
 function capitalize(choice) {
     return choice.charAt(0).toUpperCase() + choice.slice(1);
 }
+
